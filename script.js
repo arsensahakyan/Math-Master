@@ -4,7 +4,7 @@
 let hanr = document.getElementById('hanr');
 
 let titles = [
-	['Գումարում', 'sum', [
+	['Sum', 'sum', [
 			{
 				type:'input',
 				input_type:'number',
@@ -25,12 +25,284 @@ let titles = [
 		 	}
 		]
 	],
+	['Substraction', 'substraction', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'substraction()'
+		 	}
+		]
+	],
+	['Multiply', 'multiply', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'multiply()'
+		 	}
+		]
+	],	
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
+	['Dividing', 'dividin', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divide()'
+		 	}
+		]
+	],
 
-				['Հանում', 'substraction', 2], 
-				['Բազմապատկում', 'multiply', 2]]
+]
 
 // This block of code is adding elenents in dropdown
-let div = document.getElementById('myDropdown')
+let div = document.getElementById('dropdownContent')
 for (var i = 0; i < titles.length; i++) {
 	elem = titles[i]
 	let newElem = document.createElement('a')
@@ -69,6 +341,7 @@ function runCode(data){
 	});
 }
 
+
 function sum(a, b) {
 	// Function can pass 2 numbers
 	// Returns summ of two or more elements
@@ -80,6 +353,38 @@ function sum(a, b) {
 	}else{
 		var newElem = document.createElement("h3");
 		newElem.innerText = parseFloat(num1) + parseFloat(num2)
+		document.getElementById("res_bl").appendChild(newElem)
+		return true
+	}
+}
+
+function substraction(a, b) {
+	// Function can pass 2 numbers
+	// Returns summ of two or more elements
+	var num1 = document.getElementsByClassName('inp_class')[0].value;
+	var num2 = document.getElementsByClassName('inp_class')[1].value;
+	if (num1 == "" || num2 == "") {
+		alert("Please enter valid value !!!");
+		return false
+	}else{
+		var newElem = document.createElement("h3");
+		newElem.innerText = parseFloat(num1) - parseFloat(num2);
+		document.getElementById("res_bl").appendChild(newElem)
+		return true
+	}
+}
+
+function multiply(a, b) {
+	// Function can pass 2 numbers
+	// Returns summ of two or more elements
+	var num1 = document.getElementsByClassName('inp_class')[0].value;
+	var num2 = document.getElementsByClassName('inp_class')[1].value;
+	if (num1 == "" || num2 == "") {
+		alert("Please enter valid value !!!");
+		return false
+	}else{
+		var newElem = document.createElement("h3");
+		newElem.innerText = parseFloat(num1) * parseFloat(num2);
 		document.getElementById("res_bl").appendChild(newElem)
 		return true
 	}
@@ -129,18 +434,6 @@ function fractionDivision(a, b) {
  return (a_hamarich * b_haytarar) + '/' + (a_haytarar * b_hamarich)
 }
 
-
-function multiply(a, b) {
-	// Function can pass 2 numbers
-	// Returns multilpy of two or more elements
-	return a * b
-}
-
-function subtraction(a, b) {
-	// Function can pass numbers like -> 20, 4, ...
-	// Returns subtraction of two elements
-	return a - b
-}
 
 function divisionWithout(a, b) {
 	// Function can pass numbers like -> 20, 4, ...

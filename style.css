@@ -108,10 +108,9 @@ header{
 }
 
 #dropdownContent{
-  overflow: scroll;
+  height: 450px;
+  overflow-y: auto;
   background-color: white;
-  overflow-x: hidden;
-  width: 260px;
   margin-left: 20px;
 }
 main{
