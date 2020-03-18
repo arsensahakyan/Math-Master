@@ -1,71 +1,110 @@
-Categories
-  •	Algebra
-    o	Operations with numbers
-      	Sum
-      	Subtraction
-      	Compression
-      	Multiply
-     •	distribution law
-      	Division
-  •	Division with leftover
-  •	Division without leftover
-  •	Divisibility of natural numbers
-  o	The largest common divisor
-  o	The smallest common multiple
-  	Compound and mixed numbers
-  •	 Analysis of mixed numbers in simple manufacturers
-  •	Prime test 
-  	Operations with fractures
-  •	Sum
-  •	Subtraction
-  •	Division
-  •	Multiply
-  •	Comparison
-  	Mixed numbers
-  •	Sum
-  •	Subtraction
-  •	Division
-  •	Multiply
-  •	Comparison
-  	Percent
-  	Decimal fractures
-  •	Rounding
-  	Numeric expressions
-  	Letter expressions
-  o	Multipliers
-  	Sum
-  	Subtraction
-  o	Short multiplication formulas
-  	Square of sum
-  	Square of subtraction
-  	Subtraction of squares
-  	Sum of roots 
-  	Subtraction of roots
-  o	Linear expressions
-  	With one unknown first degree linear expressions
-  o	 Square root
-  o	With two unknowns first degree linear expressions
-  o	Geometric progression
-  •	Geometric
-  o	Excerpt
-  	cm -> m
-  	m -> sm
-  o	Tringles
-  	Tringle angles and sides
-  •	Determination of angles
-  •	Perimeter
-  •	Surface area
-  •	Decision of the parties
-  •	Equality
-  	Polygons
-  •	Perimeter
-  •	Surface area
-  •	Decision of the parties
-  	Circle
-  •	Surface area
-  •	Radius
-  •	Diameter
-  	Parallels
-  •	Check parallelism
-  	Vectors
-  •	Sum of vectors
+<li>Algebria</li>
+		<ul>
+			<li>Operations with numbers</li>
+			<ul>
+				<li>Sum</li>
+				<li>Subtraction</li>
+				<li>Division</li>
+				<ul>
+					<li>Division with leftover</li>
+					<li>Division without leftover</li>
+					<li>Divisibility of natural numbers</li>
+					<ul>
+						<li>The largest common divisor</li>
+						<li>The smallest common multiple</li>
+					</ul>
+				</ul>
+				<li>Multiply</li>
+				<ul>
+					<li>distribution law</li>
+				</ul>
+				<li>Compound and mixed numbers</li>
+				<ul>
+					<li>Analysis of mixed numbers in simple manufacturers</li>
+					<li>Prime test </li>
+				</ul>
+				<li>Operations with fractures</li>
+				<ul>
+					<li>Sum</li>
+					<li>Subtraction</li>
+					<li>Division</li>
+					<li>Multiply</li>
+					<li>Comparison</li>
+				</ul>
+				<li>Mixed numbers</li>
+				<ul>
+					<li>Sum</li>
+					<li>Subtraction</li>
+					<li>Division</li>
+					<li>Multiply</li>
+					<li>Comparison</li>
+				</ul>
+				<li>Percent</li>
+				<li>Decimal fractures</li>
+				<ul>
+					<li>Rounding</li>
+				</ul>
+				<li>Numeric expressions</li>
+				<li>Letter expressions</li>
+				<li>Multipliers</li>
+				<ul>
+					<li>Sum</li>
+					<li>Subtraction</li>
+				</ul>
+				<li>Short multiplication formulas</li>
+				<ul>
+					<li>Square of sum</li>
+					<li>Square of subtraction</li>
+					<li>Subtraction of squares</li>
+					<li>Sum of roots</li>
+					<li>Subtraction of roots</li>
+				</ul>
+				<li>Linear expressions</li>
+				<ul>
+					<li>With one unknown first degree linear expressions</li>
+				</ul>
+				<li>Square root</li>
+				<li>With two unknowns first degree linear expressions</li>
+				<li>Geometric progression</li>
+			</ul>
+		</ul>
+		<li>Geometric</li>
+		<ul>
+			<li>Excerpt</li>
+			<ul>
+				<li>cm -> m</li>
+				<li>m -> cm</li>
+			</ul>
+			<li>Triangles</li>
+			<ul>
+				<li>Tringle angles and sides</li>
+				<ul>
+					<li>Determination of angles</li>
+					<li>Perimeter</li>
+					<li>Surface area</li>
+					<li>Decision of the parties</li>
+					<li>Equality</li>
+				</ul>
+			</ul>
+				<li>Polygons</li>
+				<ul>
+					<li>Perimeter</li>
+					<li>Decision of the parties</li>
+					<li></li>
+				</ul>
+				<li>Circle</li>
+				<ul>
+					<li>Surface area</li>
+					<li>Radius</li>
+					<li>Diameter</li>
+				</ul>
+				<li>Parallels</li>
+				<ul>
+					<li>Check parallelism</li>
+				</ul>
+				<li>Vectors</li>
+				<ul>
+					<li>Sum of vectors</li>
+				</ul>
+		</ul>
+	</ul>
