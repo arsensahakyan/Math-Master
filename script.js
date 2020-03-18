@@ -67,7 +67,7 @@ let titles = [
 		 	}
 		]
 	],	
-	['Division With', 'divisionWith', [
+	['Division With Leftover', 'divisionWith', [
 			{
 				type:'input',
 				input_type:'number',
@@ -88,7 +88,7 @@ let titles = [
 		 	}
 		]
 	],
-	['Division Without', 'divisionWithout', [
+	['Division Without Leftover', 'divisionWithout', [
 			{
 				type:'input',
 				input_type:'number',
@@ -108,7 +108,28 @@ let titles = [
 		 		onclick: 'divisionWithout()'
 		 	}
 		]
-	]
+	],
+	['Division Without Leftover', 'divisionWithout', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Element 1 ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Element 2 ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'divisionWithout()'
+		 	}
+		]
+	],
 ]
 
 // This block of code is adding elenents in dropdown
@@ -447,9 +468,6 @@ function test_prime(number){
 ////////////////////////////////////////
 //////////////////////////////////////////
 
-function bardToParz(a){
- // Functions can pass 1 number
- // Returns array[] of numbers (parz).
 function BardToParz(num){
 	arr = [];
 	var n = 2;
@@ -476,12 +494,8 @@ function BardToParz(num){
 
 	}
 	return arr;
-}// console.log(BardToParz2byme(30))
+}
  
-// function myFunction() {
-//   document.getElementById("myDropdown").classList.toggle("show");
-// }
-
 function filterFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("myInput");
