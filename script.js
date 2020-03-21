@@ -109,28 +109,263 @@ let titles = [
 		 	}
 		]
 	],
-	['Division Without Leftover', 'divisionWithout', [
+	['Fraction Sum', 'fractionSum', [
 			{
 				type:'input',
-				input_type:'number',
-				placeholder:'Element 1 ',
+				input_type:'text',
+				placeholder:'Fraction 1 | write fraction with "/" ',
 				class: 'inp_class'
 			},
 		 	{
 		 		type:'input',
-		 		input_type:'number',
-		 		placeholder:'Element 2 ',
+		 		input_type:'text',
+		 		placeholder:'Fraction 2 | write fraction with "/" ',
 		 		class: 'inp_class'
 		 	}, 
 		 	{
 		 		type:'button',
 		 		value:'Submit',
 		 		class:'btn_class',
-		 		onclick: 'divisionWithout()'
+		 		onclick: 'fractionSum()'
 		 	}
 		]
 	],
+	['Fraction Subtraction', 'fractionSubstraction', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'Fraction 1 | write fraction with "/" ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'text',
+		 		placeholder:'Fraction 2 | write fraction with "/" ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'fractionSubstraction()'
+		 	}
+		]
+	],
+	['Fraction Multiply', 'fractionMultipy', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'Fraction 1 | write fraction with "/" ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'text',
+		 		placeholder:'Fraction 2 | write fraction with "/" ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'fractionMultipy()'
+		 	}
+		]
+	],
+	['Fraction division', 'fractionDivision', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'Fraction 1 | write fraction with "/" ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'text',
+		 		placeholder:'Fraction 2 | write fraction with "/" ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'fractionDivision()'
+		 	}
+		]
+	],
+	['Fraction Comparison', 'fractionComparison', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'Fraction 1 | write fraction with "/" ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'text',
+		 		placeholder:'Fraction 2 | write fraction with "/" ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'fractionComparison()'
+		 	}
+		]
+	],
+	['CM to Meter', 'cmToMeter', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'CM ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'cmToMeter()'
+		 	}
+		]
+	],
+	['Meter to CM', 'meterToCm', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'Meter ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'meterToCm()'
+		 	}
+		]
+	],
+	['Percent', 'percent', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Number',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'number',
+		 		placeholder:'Percent (don\'t write << % >>)',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'percent()'
+		 	}
+		]
+	],
+	['Decimal Fraction Raund', 'decimalFractionRound', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Number',
+				class: 'inp_class'
+			}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'decimalFractionRound()'
+		 	}
+		]
+	],
+	['Irregular Fraction to Mixed Number', 'IrrFractureToMixedNum', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'Irregular Fracture ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'IrrFractureToMixedNum()'
+		 	}
+		]
+	],
+	['Mixed umber To Irregular Fraction', 'mixedNumToIrrFracture', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'All part',
+				class: 'inp_class2'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'Fracture',
+		 		placeholder:'Percent (don\'t write << % >>)',
+		 		class: 'inp_class2'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'mixedNumToIrrFracture()'
+		 	}
+		]
+	],
+	['Square', 'square', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Number',
+				class: 'inp_class'
+			}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'square()'
+		 	}
+		]
+	],
+	['Prime test', 'test_prime', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Number',
+				class: 'inp_class'
+			}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'test_prime()'
+		 	}
+		]
+	],
+	['component number analysis in simple numbers', 'BardToParz', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Number',
+				class: 'inp_class'
+			}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'BardToParz()'
+		 	}
+		]
+	]
 ]
+
+
+// res is a result's block
+var res = document.getElementById("res_item");
 
 // This block of code is adding elenents in dropdown
 let div = document.getElementById('dropdownContent')
@@ -215,22 +450,6 @@ function multiply(a, b) {
 	}
 }
 
-function divisionWithout(a, b) {
-	// Function can pass numbers like -> 20, 4, ...
-	// Returns divison of two elements (without residue)
-	var num1 = document.getElementsByClassName('inp_class')[0].value;
-	var num2 = document.getElementsByClassName('inp_class')[1].value;
-	if (num1 == "" || num2 == "") {
-		alert("Please enter valid value !!!");
-		return false
-	}else{
-		var res = document.getElementById("res_item");
-		res.innerText = "";
-		res.innerText = num1 / num2 
-		return true
-	}
-}
-
 function divisionWith(a,b){
 	// Function can pass numbers like -> 20, 4, ...
 	// Returns divison of two elements (with residue)
@@ -247,12 +466,10 @@ function divisionWith(a,b){
 	}
 }
 
-
-// FRACTION //
-function fractionSubstraction(a, b) {
- 	// Function can pass string like -> '2/3'
- 	// Returns substraction of a & b
- 	var num1 = document.getElementsByClassName('inp_class')[0].value;
+function divisionWithout(a, b) {
+	// Function can pass numbers like -> 20, 4, ...
+	// Returns divison of two elements (without residue)
+	var num1 = document.getElementsByClassName('inp_class')[0].value;
 	var num2 = document.getElementsByClassName('inp_class')[1].value;
 	if (num1 == "" || num2 == "") {
 		alert("Please enter valid value !!!");
@@ -260,62 +477,11 @@ function fractionSubstraction(a, b) {
 	}else{
 		var res = document.getElementById("res_item");
 		res.innerText = "";
-		res.innerText = ((num1/num2).toString().split(".")[0] + " & " + (num1%num2))
+		res.innerText = num1 / num2 
 		return true
 	}
-
-	 a_hamarich = a.split('/')[0]
-	 a_haytarar = a.split('/')[1] 
-	 b_hamarich = b.split('/')[0]
-	 b_haytarar = b.split('/')[1]
-
-	 if(a_haytarar != b_haytarar){
-	  result_haytarar = nok(a_haytarar, b_haytarar)
-	  result_hamarich = ((result_haytarar / a_haytarar) * a_hamarich) - ((result_haytarar / b_haytarar) * b_hamarich)
-	 }else{
-	  result_haytarar = a_haytarar
-	  result_hamarich = a_hamarich + b_hamarich
-	  return result_hamarich + '/' + result_haytarar
-	 }
-
 }
 
-function fractionMultipy(a, b) {
- // Function can pass string like -> '2/3'
- // Returns Multiply of a & b
-
- a_hamarich = a.split('/')[0]
- a_haytarar = a.split('/')[1]
- b_hamarich = b.split('/')[0]
- b_haytarar = b.split('/')[1]
-
- return (a_hamarich * b_hamarich) + '/' + (a_haytarar * b_haytarar)
-}
-
-function fractionDivision(a, b) {
- // Function can pass string like -> '2/3'
- // Returns substraction of a & b
-
- a_hamarich = a.split('/')[0]
- a_haytarar = a.split('/')[1]
- b_hamarich = b.split('/')[0]
- b_haytarar = b.split('/')[1]
-
- return (a_hamarich * b_haytarar) + '/' + (a_haytarar * b_hamarich)
-}
-
-
-function cmToMeter(cm) {
-	// Function can pass numbers like -> 20, 4, ...
-	// Returns meters from passed centimeters
-	return cm / 100
-}
-
-function meterToCm(meter) {
-	// Function can pass numbers like -> 20, 4, ...
-	// Returns centimeters from passed meters
-	return cm * 100
-}
 
 function checkDivision(nmb, checkNmb) {
 	// Function can pass numbers like -> 20, 4, ...
@@ -328,147 +494,237 @@ function checkDivision(nmb, checkNmb) {
 }
 
 
-function checkEqualFraction(a, b) {
-	// Function can pass string like -> '2/3'
-	// Returns true if they are equal
-
-	a_hamarich = a.split('/')[0]
-	a_haytarar = a.split('/')[1]
-	b_hamarich = b.split('/')[0]
-	b_haytarar = b.split('/')[1]
-	if(a_hamarich / b_hamarich == a_haytarar / b_haytarar){
-		return true
-	}else{
-		return false
-	}
-}
-
-function fractionDivision(a,b){
-	a_hamarich = a.split('/')[0]
-	a_haytarar = a.split('/')[1]
-	b_hamarich = b.split('/')[0]
-	b_haytarar = b.split('/')[1]
-	return a_hamarich*b_haytarar + " / " + a_haytarar*b_hamarich;
-}
-
-
-function percent(num, perc){
-	return num*perc/100;
-}
-
-function decimalFractionRound(num){
-	return Math.round(num);
-}
-
-function fractionComparison(a, b) {
-	// Function can pass string like -> '2/3'
-	// Returns True if a > b
-
-	a_hamarich = a.split('/')[0]
-	a_haytarar = a.split('/')[1]
-	b_hamarich = b.split('/')[0]
-	b_haytarar = b.split('/')[1]
-	if(a_hamarich * b_haytarar > b_hamarich * a_haytarar){
-		return true
-	}else{
-		return false
-	}
-}
-
-function NOD(n, m) {
-	// Function can pass numbers like -> 20, 4, ...
-	// Returns GCD (Greatest Common Divisor)
-	if(m > 0) { 
-		let k = n % m;
-		return NOD(m, k); 
-	}else { 
-		return Math.abs(n);  
-	}
-}
-
-function NOK(x, y){
-  return (x / NOD(x, y) | 0) * y;
-}
-
-function IrrFractureToMixedNum(num){
-	num_hamarich = Number(num.split('/')[0]);
-	num_haytarar = Number(num.split('/')[1]);
-	allp = (num_hamarich/num_haytarar).toString();
-	allPart = allp.split(".")[0];
-	return allPart + " ամբողջ " + (num_hamarich - allPart * num_haytarar) + "/" + num_haytarar;
-}
-
-function mixedNumToIrrFracture(num, allPart){
-	num_hamarich = Number(num.split('/')[0]);
-	num_haytarar = Number(num.split('/')[1]);
-	return num_haytarar * allPart + num_hamarich + " / " + num_haytarar;
-}
-
-function sameAnnouncement(a,b){
-	a_hamarich = a.split('/')[0]
-	a_haytarar = a.split('/')[1]
-	b_hamarich = b.split('/')[0]
-	b_haytarar = b.split('/')[1]
-	var same = NOK(a_haytarar, b_haytarar);
-	return same/a_haytarar*a_hamarich + same/b_haytarar*b_hamarich + " / " + same;
-}
+// FRACTION //
 
 function fractionSum(a, b) {
 	// Function can pass string like -> '2/3'
 	// Returns sum if a & b
 
-	a_hamarich = a.split('/')[0]
-	a_haytarar = a.split('/')[1]
-	b_hamarich = b.split('/')[0]
-	b_haytarar = b.split('/')[1]
-
-	if(a_haytarar != b_haytarar){
-
+ 	var num1 = document.getElementsByClassName('inp_class')[0].value;
+	var num2 = document.getElementsByClassName('inp_class')[1].value;
+	var num1_ham = Number(num1.split('/')[0]);
+	var num1_hay = Number(num1.split('/')[1]);
+	var num2_ham = Number(num2.split('/')[0]);
+	var num2_hay = Number(num2.split('/')[1]);
+	if (num1_hay == 0 || num2_hay == 0) {
+		alert("Can't divide with 0");
+		return;
+	}if (num1.includes('/') == false || num2.includes('/') == false) {
+		alert("Please enter fraction with << / >>");
+		return;
+	}if (num1_hay == 0 || num2_hay == 0) {
+		alert("Can't divide with 0");
+		return;
+	}if(num1_hay !== num2_hay){
+		var result_haytarar = NOK(num1_hay, num2_hay);
+		var result_hamarich = ((result_haytarar / num1_hay) * num1_ham) + ((result_haytarar / num2_hay) * num2_ham)
 	}else{
-		result_hamarich = a_hamarich + b_hamarich
-		result = "a_hamarich "
+		result_hamarich = num1_ham + num2_ham
+		result_haytarar = num1_hay;
+	}
+
+	var result_num = (result_hamarich + '/' + result_haytarar);
+	if (result_haytarar == result_hamarich) {
+		result_num = result_hamarich;
+	}
+
+	res.innerText = "";
+	res.innerText = result_num
+	return true
+}
+
+function fractionSubstraction(a, b) {
+ 	// Function can pass string like -> '2/3'
+ 	// Returns substraction of a & b
+ 	var num1 = document.getElementsByClassName('inp_class')[0].value;
+	var num2 = document.getElementsByClassName('inp_class')[1].value;
+
+	var num1_ham = Number(num1.split('/')[0]);
+	var num1_hay = Number(num1.split('/')[1]);
+	var num2_ham = Number(num2.split('/')[0]);
+	var num2_hay = Number(num2.split('/')[1]);
+ 	if (num1.includes('/') == false || num2.includes('/') == false) {
+		alert("Please enter fraction with << / >>");
+		return false
+	}if (num1_hay == 0 || num2_hay == 0) {
+		alert("Can't divide with 0");
+		return false		
+	}if(num1_hay !== num2_hay){
+		var result_haytarar = NOK(num1_hay, num2_hay);
+		var result_hamarich = ((result_haytarar / num1_hay) * num1_ham) - ((result_haytarar / num2_hay) * num2_ham)
+	}if(num1_hay == num2_hay){
+		result_haytarar = num1_hay
+		console.log(result_haytarar)
+		result_hamarich = num1_ham - num2_ham
+		console.log(result_hamarich)
+	}if((num1_ham * num2_hay) < (num2_ham * num1_hay)){
+		alert("First fraction is bigger than second")
+		return;
+	}
+		res.innerText = "";
+		res.innerText = (result_hamarich + '/' + result_haytarar)
+		return true
+}
+
+function fractionMultipy(a, b) {
+ // Function can pass string like -> '2/3'
+ // Returns Multiply of a & b
+ 	var num1 = document.getElementsByClassName('inp_class')[0].value;
+	var num2 = document.getElementsByClassName('inp_class')[1].value;
+
+	var num1_ham = Number(num1.split('/')[0]);
+	var num1_hay = Number(num1.split('/')[1]);
+	var num2_ham = Number(num2.split('/')[0]);
+	var num2_hay = Number(num2.split('/')[1]);
+ 	if (num1.includes('/') == false || num2.includes('/') == false) {
+		alert("Please enter fraction with << / >>");
+		return false
+	}else if (num1_hay == 0 || num2_hay == 0) {
+		alert("Can't divide with 0");
+		return false		
+	}
+	else{
+		var res = document.getElementById("res_item");
+		res.innerText = "";
+		res.innerText = (num1_ham * num2_ham) + '/' + (num1_hay * num2_hay)
+		return true
+	}
+}
+
+function fractionDivision(a, b) {
+ // Function can pass string like -> '2/3'
+ // Returns substraction of a & b
+ 	var num1 = document.getElementsByClassName('inp_class')[0].value;
+	var num2 = document.getElementsByClassName('inp_class')[1].value;
+	var num1_ham = Number(num1.split('/')[0]);
+	var num1_hay = Number(num1.split('/')[1]);
+	var num2_ham = Number(num2.split('/')[0]);
+	var num2_hay = Number(num2.split('/')[1]);
+ 	if (num1.includes('/') == false || num2.includes('/') == false) {
+		alert("Please enter fraction with << / >>");
+		return false
+	}else if (num1_hay == 0 || num2_hay == 0) {
+		alert("Can't divide with 0");
+		return false		
+	}else{
+		var res = document.getElementById("res_item");
+		res.innerText = "";
+		res.innerText = (num1_ham * num2_hay) + '/' + (num1_hay * num2_ham)
+		return true
 	}
 
 }
 
+function fractionComparison(a, b) {
+	// Function can pass string like -> '2/3'
+	// Returns True if a > b
+ 	var num1 = document.getElementsByClassName('inp_class')[0].value;
+	var num2 = document.getElementsByClassName('inp_class')[1].value;
+	var num1_ham = Number(num1.split('/')[0]);
+	var num1_hay = Number(num1.split('/')[1]);
+	var num2_ham = Number(num2.split('/')[0]);
+	var num2_hay = Number(num2.split('/')[1]);
+ 	if (num1.includes('/') == false || num2.includes('/') == false) {
+		alert("Please enter fraction with << / >>");
+		return;
+	}if (num1_hay == 0 || num2_hay == 0) {
+		alert("Can't divide with 0");
+		return;	
+	}if(num1_ham * num2_hay > num2_ham * num1_hay){
+		res.innerText = "";
+		res.innerText = "Fraction 1 is greater than Fraction 2";
+	}else if (num1_ham * num2_hay == num2_ham * num1_hay) {
+		res.innerText = "";
+		res.innerText = "Fraction 1 is equal to Fraction 2";		
+	}else{
+		res.innerText = "";
+		res.innerText = "Fraction 1 is smaller than Fraction 2"
+	}		
+}
+
+
+function cmToMeter(cm) {
+	// Function can pass numbers like -> 20, 4, ...
+	// Returns meters from passed centimeters
+	var cm = document.getElementsByClassName('inp_class')[0].value;
+	res.innerText = "";
+	res.innerText = cm / 100;
+}
+
+function meterToCm(meter) {
+	// Function can pass numbers like -> 20, 4, ...
+	// Returns centimeters from passed meters
+	var meter = document.getElementsByClassName('inp_class')[0].value;
+	res.innerText = "";
+	res.innerText = meter * 100;
+}
+
+function percent(num, perc){
+	var num = document.getElementsByClassName('inp_class')[0].value;
+	var percent = document.getElementsByClassName('inp_class')[1].value;
+	res.innerText ="";
+	res.innerText = num*percent/100;
+}
+
+function decimalFractionRound(num){
+	var num = document.getElementsByClassName('inp_class')[0].value;
+	res.innerText ="";
+	res.innerText = Math.round(num)
+}
+
+function IrrFractureToMixedNum(num){
+	var num = document.getElementsByClassName('inp_class')[0].value;
+	var num_hamarich = Number(num.split('/')[0]);
+	var num_haytarar = Number(num.split('/')[1]);
+	allp = (num_hamarich/num_haytarar).toString();
+	allPart = allp.split(".")[0];
+	res.innerText = "";
+	res.innerText = allPart + " & " + (num_hamarich - allPart * num_haytarar) + "/" + num_haytarar;
+}
+
+function mixedNumToIrrFracture(num, allPart){
+	var allPart = document.getElementsByClassName('inp_class2')[0].value;
+	var num = document.getElementsByClassName('inp_class2')[1].value;
+	var num_hamarich = Number(num.split('/')[0]);
+	var num_haytarar = Number(num.split('/')[1]);
+	res.innerText = "";
+	res.innerText = num_haytarar * allPart + num_hamarich + " / " + num_haytarar
+}
+
 function square(number){
-	return Math.sqrt(nuumber);
+	var num = document.getElementsByClassName('inp_class')[0].value;
+	res.innerText = "";
+	res.innerText = Math.sqrt(num);
 }
 
 function test_prime(number){
+	var num = document.getElementsByClassName('inp_class')[0].value;
 	//Function can test is number prime r not
-	if (number===1){
+	if (num===1){
+		res.innerText = "";
+		res.innerText = "false";
 		return false;
   	}
-  	else if(number === 2){
+  	else if(num === 2){
+  		res.innerText = "";
+  		res.innerText = "true"
     	return true;
   	}else{
-    	for(var x = 2; x < number; x++){
-      		if(number % x === 0){
+    	for(var x = 2; x < num; x++){
+      		if(num % x === 0){
+      			res.innerText = "";
+      			res.innerText = "false";
         		return false;
       		}
     	}
+    	res.innerText = "";
+    	res.innerText = "true"
     	return true;  
   	}
 }
 
-///////////////////////////////////////
-////////////////////////////////////////
-//////////////////////////////////////
-// function mixedNumComparison(a_all,a,b_all,b){
-// 	a_hamarich = a.split('/')[0]
-// 	a_haytarar = a.split('/')[1]
-// 	b_hamarich = b.split('/')[0]
-// 	b_haytarar = b.split('/')[1]
-// 	var a_frac = mixedNumToIrrFracture(a, a_all);
-// 	var b_frac = mixedNumToIrrFracture(b, b_all);
-// 	return fractionComparison(a_frac, b_frac);
-// } console.log(mixedNumComparison(2,"3/4",3,"5/7"));
-/////////////////////////////////////////////
-////////////////////////////////////////
-//////////////////////////////////////////
-
-function BardToParz(num){
+function BardToParz(){
+	var num = document.getElementsByClassName('inp_class')[0].value;
 	arr = [];
 	var n = 2;
 	if (test_prime(num) == true) {
@@ -493,8 +749,62 @@ function BardToParz(num){
 		}
 
 	}
-	return arr;
+	var str = "";
+	res.innerText = "";
+	for(elem of arr){
+		str=str+elem+" ";
+	}
+	res.innerText=str;
 }
+
+// NOK // NOD // 
+function NOD(n, m) {
+	// Function can pass numbers like -> 20, 4, ...
+	// Returns GCD (Greatest Common Divisor)
+	if(m > 0) { 
+		let k = n % m;
+		return NOD(m, k); 
+	}else { 
+		return Math.abs(n);  
+	}
+}
+
+function NOK(x, y){
+  return (x / NOD(x, y) | 0) * y;
+}
+
+function sameAnnouncement(a,b){
+	a_hamarich = a.split('/')[0]
+	a_haytarar = a.split('/')[1]
+	b_hamarich = b.split('/')[0]
+	b_haytarar = b.split('/')[1]
+	var same = NOK(a_haytarar, b_haytarar);
+	return same/a_haytarar*a_hamarich + same/b_haytarar*b_hamarich + " / " + same;
+}
+
+
+
+
+
+
+
+///////////////////////////////////////
+////////////////////////////////////////
+//////////////////////////////////////
+// function mixedNumComparison(a_all,a,b_all,b){
+// 	a_hamarich = a.split('/')[0]
+// 	a_haytarar = a.split('/')[1]
+// 	b_hamarich = b.split('/')[0]
+// 	b_haytarar = b.split('/')[1]
+// 	var a_frac = mixedNumToIrrFracture(a, a_all);
+// 	var b_frac = mixedNumToIrrFracture(b, b_all);
+// 	return fractionComparison(a_frac, b_frac);
+// } console.log(mixedNumComparison(2,"3/4",3,"5/7"));
+/////////////////////////////////////////////
+////////////////////////////////////////
+//////////////////////////////////////////
+
+
  
 function filterFunction() {
   var input, filter, ul, li, a, i;
