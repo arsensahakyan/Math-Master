@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Math Master | </title>
+	<title> Math Master |</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<!-- <link rel=aa"shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="menu">
-				<img src="logo.png" class="logo">
+				<img style="cursor: pointer;" id="homeLogo" src="logo.png" class="logo">
 				<div class="small_menu">
-					<p class="menu_p">Home</p>
-					<p class="menu_p">About Us</p>
+					<a href="#about" class="menu_p" id='homeBtn' style='text-decoration: none;'>Home</a>
+					<a href="#about" class="menu_p" id='aboutBtn' style='text-decoration: none;'>About</a>
 				</div>
 			</div>
 		</div>
 	</header>
 	<div class="container">
-		<main>
+		<main id='main'>
 			<div class='dropdown'>
 				<div id="myDropdown" class="dropdown-content my-dropdown show" style="width: 260px">
 				    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
@@ -28,17 +27,36 @@
 
 				    </div>
 			  	</div>
-			</div><!--  -->
+			</div>
 			<div class="result" >
 				<div class="input_block" id="result_block"></div>
 				<div class="result_block" id="res_bl">
-					<h2 id="h3" style="display:none;">RESULT</h2> 
+					<h2 id="h3" style="display:none;">RESULT:</h2> 
 					<h3 id="res_item"></h3>
-		
 				</div>
-			</div>
+			</div>	
 		</main>
+		<div id="about-us">
+			<br>
+			<h2 class="my-h2">Math Master</h2>
+			<p>
+				What is <span style="font-style: italic;">Math Master ???</span>
+				<p>
+					This program is designed for both complex and easy math operations. This program includes all mathematics from 5th through 9th grade. With this program, people will be able to easily find solutions to algebraic and geometric problems. There is a search feature. It is working with HTML and pure JS. Everything is working in pure JavaScript.
+				</p>
+			</p>
+			<br>
+			<h2 class="my-h2">Functionality</h2>
+				<p style="display: inline;">
+					This program can do both algebric and geometric operations. You can sum, subtract, multiple and any operations with numbers. You can do operations with geometric object too. You can see functions list by download all list </p><a style="display: inline;" href="description.docx" download>here</a><p style="display: inline;">.
+				</p>
+			<br>
+		</div>
 	</div>
+	<footer>
+		&copy; #BlockChainGTC
+	</footer>
 	<script src="script.js"></script>
+	<script src="data.json"></script>
 </body>
 </html>
