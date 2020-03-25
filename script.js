@@ -1895,7 +1895,7 @@ function AAA(angle1, angle2){
  	var angle1 = Number(document.getElementsByClassName('inp_class')[0].value);
  	var angle2 = Number(document.getElementsByClassName('inp_class')[1].value);
  	var result = (180 - angle1 - angle2) + ' degrees';
- 	if (angle2 + angle1 > 179) {
+ 	if (angle1 >= angle2 + result || angle2 >= angle1 + result || result >= angle1+angle2) {
  		alert('Enter valid values ...');
  		res.innerText = '';
  		return;
