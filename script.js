@@ -188,57 +188,6 @@ let titles = [
 		 	}
 		]
 	],
-	['Fraction Comparison', 'fractionComparison', [
-			{
-				type:'input',
-				input_type:'text',
-				placeholder:'Fraction 1 | write fraction with "/" ',
-				class: 'inp_class'
-			},
-		 	{
-		 		type:'input',
-		 		input_type:'text',
-		 		placeholder:'Fraction 2 | write fraction with "/" ',
-		 		class: 'inp_class'
-		 	}, 
-		 	{
-		 		type:'button',
-		 		value:'Submit',
-		 		class:'btn_class',
-		 		onclick: 'fractionComparison()'
-		 	}
-		]
-	],
-	['CM to Meter', 'cmToMeter', [
-			{
-				type:'input',
-				input_type:'text',
-				placeholder:'CM ',
-				class: 'inp_class'
-			},
-		 	{
-		 		type:'button',
-		 		value:'Submit',
-		 		class:'btn_class',
-		 		onclick: 'cmToMeter()'
-		 	}
-		]
-	],
-	['Meter to CM', 'meterToCm', [
-			{
-				type:'input',
-				input_type:'text',
-				placeholder:'Meter ',
-				class: 'inp_class'
-			},
-		 	{
-		 		type:'button',
-		 		value:'Submit',
-		 		class:'btn_class',
-		 		onclick: 'meterToCm()'
-		 	}
-		]
-	],
 	['Percent', 'percent', [
 			{
 				type:'input',
@@ -311,7 +260,28 @@ let titles = [
 		 	}
 		]
 	],
-	['Square', 'square', [
+	['Degree', 'degree', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Enter number',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'Fracture',
+		 		placeholder:'Enter degree',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'degree()'
+		 	}
+		]
+	],
+	['Root', 'square', [
 			{
 				type:'input',
 				input_type:'number',
@@ -323,6 +293,21 @@ let titles = [
 		 		value:'Submit',
 		 		class:'btn_class',
 		 		onclick: 'square()'
+		 	}
+		]
+	],
+	['Square of number', 'numSqr', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Enter number',
+				class: 'inp_class'
+			}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'numSqr()'
 		 	}
 		]
 	],
@@ -383,54 +368,7 @@ let titles = [
 		 	}
 		]
 	],
-	['Area of triangle', 'triangleArea', [
-			{
-				type:'input',
-				input_type:'number',
-				placeholder:'Triangle base (cm)',
-				class: 'inp_class'
-			}, 
-			{
-				type:'input',
-				input_type:'number',
-				placeholder:'Triangle height (cm)',
-				class: 'inp_class'
-			}, 
-		 	{
-		 		type:'button',
-		 		value:'Submit',
-		 		class:'btn_class',
-		 		onclick: 'triangleArea()'
-		 	}
-		]
-	],
-	['Perimter of triangle', 'trianglePerimetr', [
-			{
-				type:'input',
-				input_type:'number',
-				placeholder:'A side',
-				class: 'inp_class'
-			}, 
-			{
-				type:'input',
-				input_type:'number',
-				placeholder:'B side',
-				class: 'inp_class'
-			},
-			{
-				type:'input',
-				input_type:'number',
-				placeholder:'C side',
-				class: 'inp_class'
-			},
-		 	{
-		 		type:'button',
-		 		value:'Submit',
-		 		class:'btn_class',
-		 		onclick: 'trianglePerimetr()'
-		 	}
-		]
-	],
+
 	['Sum of Vectors', 'vectorSum', [
 			{
 				type:'input',
@@ -494,36 +432,7 @@ let titles = [
 		 	}
 		]
 	],
-	['Circle Area', 'circleArea', [
-			{
-				type: 'input',
-				input_type: 'number',
-				placeholder: 'Cicle radius (cm)',
-				class: 'inp_class'
-			}, 
-		 	{
-		 		type:'button',
-		 		value:'Submit',
-		 		class:'btn_class',
-		 		onclick: 'circleArea()'
-		 	}
-		]
-	],
-	['Circle Radius', 'circleRadius', [
-			{
-				type: 'input',
-				input_type: 'number',
-				placeholder: 'Cicle diameter (cm)',
-				class: 'inp_class'
-			}, 
-		 	{
-		 		type:'button',
-		 		value:'Submit',
-		 		class:'btn_class',
-		 		onclick: 'circleRadius()'
-		 	}
-		]
-	],
+
 	['Square Of Sum', 'squareOfSum', [
 			{
 				type:'input',
@@ -671,6 +580,57 @@ let titles = [
 		 	}
 		]
 	],
+	['Fraction Comparison', 'fractionComparison', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'Fraction 1 | write fraction with "/" ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'input',
+		 		input_type:'text',
+		 		placeholder:'Fraction 2 | write fraction with "/" ',
+		 		class: 'inp_class'
+		 	}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'fractionComparison()'
+		 	}
+		]
+	],
+	['Meter to CM', 'meterToCm', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'Meter ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'meterToCm()'
+		 	}
+		]
+	],
+	['CM to Meter', 'cmToMeter', [
+			{
+				type:'input',
+				input_type:'text',
+				placeholder:'CM ',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'cmToMeter()'
+		 	}
+		]
+	],
 	['Kg To G', 'kgToG', [
 			{
 				type:'input',
@@ -791,6 +751,132 @@ let titles = [
 		 	}
 		]
 	],
+	['Circle Area', 'circleArea', [
+			{
+				type: 'input',
+				input_type: 'number',
+				placeholder: 'Cicle radius (cm)',
+				class: 'inp_class'
+			}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'circleArea()'
+		 	}
+		]
+	],
+	['Circle Radius', 'circleRadius', [
+			{
+				type: 'input',
+				input_type: 'number',
+				placeholder: 'Cicle diameter (cm)',
+				class: 'inp_class'
+			}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'circleRadius()'
+		 	}
+		]
+	],
+	['Area of triangle', 'triangleArea', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Triangle base (cm)',
+				class: 'inp_class'
+			}, 
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'Triangle height (cm)',
+				class: 'inp_class'
+			}, 
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'triangleArea()'
+		 	}
+		]
+	],
+	['Perimter of triangle', 'trianglePerimetr', [
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'A side',
+				class: 'inp_class'
+			}, 
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'B side',
+				class: 'inp_class'
+			},
+			{
+				type:'input',
+				input_type:'number',
+				placeholder:'C side',
+				class: 'inp_class'
+			},
+		 	{
+		 		type:'button',
+		 		value:'Submit',
+		 		class:'btn_class',
+		 		onclick: 'trianglePerimetr()'
+		 	}
+		]
+	],
+	['Find angel of triangle (AAA)', 'AAA', [
+		   	{
+		    	type: 'input',
+		    	input_type: 'number',
+		    	placeholder: 'Angle: A',
+		    	class: 'inp_class'
+		   	}, 
+		   	{
+		    	type: 'input',
+		    	input_type: 'number',
+		    	placeholder: 'Angle: B',
+		    	class: 'inp_class'
+		   	},
+		    {
+		     	type:'button',
+		     	value:'Submit',
+		     	class:'btn_class',
+		     	onclick: 'AAA()'
+		    }
+  		]
+ 	],
+ 	['Find angel of triangle (AAS)', 'AAS', [
+		   	{
+		    	type: 'input',
+		    	input_type: 'number',
+		    	placeholder: 'Angle: A',
+		    	class: 'inp_class'
+		   	}, 
+		   	{
+		    	type: 'input',
+		    	input_type: 'number',
+		    	placeholder: 'Angle: B',
+		    	class: 'inp_class'
+		   	},
+		   	{
+		    	type: 'input',
+		    	input_type: 'number',
+		    	placeholder: 'Side: a',
+		    	class: 'inp_class'
+		   	},
+		    {
+			    type:'button',
+			    value:'Submit',
+			    class:'btn_class',
+			    onclick: 'AAS()'
+		    }
+	  	]
+ 	],
 	['Force (F)', 'force', [
 			{
 				type:'input',
@@ -932,54 +1018,7 @@ let titles = [
 		 	}
 		]
 	],
-	['Angle Angle Angle', 'AAA', [
-		   	{
-		    	type: 'input',
-		    	input_type: 'number',
-		    	placeholder: 'Angle: A',
-		    	class: 'inp_class'
-		   	}, 
-		   	{
-		    	type: 'input',
-		    	input_type: 'number',
-		    	placeholder: 'Angle: B',
-		    	class: 'inp_class'
-		   	},
-		    {
-		     	type:'button',
-		     	value:'Submit',
-		     	class:'btn_class',
-		     	onclick: 'AAA()'
-		    }
-  		]
- 	],
- 	['Angle Angle Side', 'AAS', [
-		   	{
-		    	type: 'input',
-		    	input_type: 'number',
-		    	placeholder: 'Angle: A',
-		    	class: 'inp_class'
-		   	}, 
-		   	{
-		    	type: 'input',
-		    	input_type: 'number',
-		    	placeholder: 'Angle: B',
-		    	class: 'inp_class'
-		   	},
-		   	{
-		    	type: 'input',
-		    	input_type: 'number',
-		    	placeholder: 'Side: a',
-		    	class: 'inp_class'
-		   	},
-		    {
-			    type:'button',
-			    value:'Submit',
-			    class:'btn_class',
-			    onclick: 'AAS()'
-		    }
-	  	]
- 	],
+
 ];
 
 var res = document.getElementById("res_item")
@@ -1888,4 +1927,28 @@ function AAS(angleA, angleB, sideA){
      'Side A: ' + sideA + '\n' +
      'Side B: ' + sideB + '\n' +
      'Side C: ' + sideC + '\n'
+}
+
+function numSqr(){
+	var num = document.getElementsByClassName('inp_class')[0].value;
+	if (num == '') {
+		alert('Please enter number');
+		return;
+	}else{
+		res.innerText = '';
+		res.innerText = num*num;
+	}
+}
+function degree(){
+	var num = document.getElementsByClassName('inp_class')[0].value;
+	var degree = document.getElementsByClassName('inp_class')[1].value;
+
+	if (num == '' || degree == '') {
+		alert('Please enter number');
+		return;
+	}
+	else{
+		res.innerText = '';
+		res.innerText = Math.pow(num, degree)
+	}
 }
